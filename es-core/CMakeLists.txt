@@ -45,6 +45,7 @@ set(CORE_HEADERS
 	${CMAKE_CURRENT_SOURCE_DIR}/src/components/InfoStripComponent.h
 	${CMAKE_CURRENT_SOURCE_DIR}/src/components/NetworkInfoComponent.h
 	${CMAKE_CURRENT_SOURCE_DIR}/src/components/ProgressBarComponent.h
+	${CMAKE_CURRENT_SOURCE_DIR}/src/components/VideoComponent.h
 
 	# Guis
 	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiDetectDevice.h
@@ -103,6 +104,7 @@ set(CORE_SOURCES
 	${CMAKE_CURRENT_SOURCE_DIR}/src/components/InfoStripComponent.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/src/components/NetworkInfoComponent.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/src/components/ProgressBarComponent.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/src/components/VideoComponent.cpp
 
 	# Guis
 	${CMAKE_CURRENT_SOURCE_DIR}/src/guis/GuiDetectDevice.cpp
