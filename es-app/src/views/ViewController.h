@@ -32,6 +32,7 @@ public:
 	void goToSystemView(SystemData* system);
 	void goToSetupGamepad();
 	void goToStart();
+	void goToRandomGame();
 
 	void onFileChanged(FileData* file, FileChangeType change);
 

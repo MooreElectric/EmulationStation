@@ -103,6 +103,10 @@ bool ISimpleGameListView::input(InputConfig* config, Input input)
 				ViewController::get()->goToPrevGameList();
 				return true;
 			}
+		}else if (config->isMappedTo("x", input))
+		{
+			ViewController::get()->goToRandomGame();
+			return true;
 		}
 	}
 
