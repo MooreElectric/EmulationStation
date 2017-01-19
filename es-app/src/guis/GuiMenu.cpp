@@ -22,8 +22,6 @@
 #include "components/MenuComponent.h"
 #include "components/ProgressBarComponent.h"
 #include "VolumeControl.h"
-#include "scrapers/GamesDBScraper.h"
-#include "scrapers/TheArchiveScraper.h"
 
 GuiMenu::GuiMenu(Window* window) : GuiComponent(window), mMenu(window, "MAIN MENU"), mVersion(window), mNetInfo(window)
 {

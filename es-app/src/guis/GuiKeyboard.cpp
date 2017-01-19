@@ -19,7 +19,6 @@
 #include "components/ComponentGrid.h"
 #include "VolumeControl.h"
 #include "scrapers/GamesDBScraper.h"
-#include "scrapers/TheArchiveScraper.h"
 
 GuiKeyboard::GuiKeyboard(Window* window) : GuiComponent(window) , mMenu(window, "KEYBOARD"), mVersion(window), cGrid(window, Eigen::Vector2i(256,256))
 {

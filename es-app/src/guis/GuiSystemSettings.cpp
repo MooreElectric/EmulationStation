@@ -32,7 +32,6 @@
 #include "components/MenuComponent.h"
 #include "VolumeControl.h"
 #include "scrapers/GamesDBScraper.h"
-#include "scrapers/TheArchiveScraper.h"
 #include "guis/GuiTextEditPopup.h"
 
 GuiSystemSettings::GuiSystemSettings(Window* window) : GuiComponent(window), mMenu(window, "SYSTEM SETTINGS"), mVersion(window)
