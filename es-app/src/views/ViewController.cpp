@@ -13,7 +13,7 @@
 #include "animations/LaunchAnimation.h"
 #include "animations/MoveCameraAnimation.h"
 #include "animations/LambdaAnimation.h"
-#include <SDL2/SDL.h>
+#include <SDL.h>
 
 ViewController* ViewController::sInstance = NULL;
 
