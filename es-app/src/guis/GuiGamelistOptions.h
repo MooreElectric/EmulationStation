@@ -2,6 +2,7 @@
 #include "components/MenuComponent.h"
 #include "components/OptionListComponent.h"
 #include "components/SwitchComponent.h"
+#include "GuiGamelistFilter.h"
 #include "FileSorts.h"
 
 class IGameListView;
@@ -17,9 +18,10 @@ public:
 	virtual std::vector<HelpPrompt> getHelpPrompts() override;
 
 private:
+	void openGamelistFilter();
 	void openMetaDataEd();
 	void jumpToLetter();
-	
+
 	MenuComponent mMenu;
 
 	typedef OptionListComponent<char> LetterList;
@@ -32,7 +34,9 @@ private:
 	std::shared_ptr<ViewList> mViewList;
 
 	std::shared_ptr<SwitchComponent> systemEnable_switch;
-	
+
 	SystemData* mSystem;
 	IGameListView* getGamelist();
+	bool fromPlaceholder;
+	bool mFiltersChanged;
 };

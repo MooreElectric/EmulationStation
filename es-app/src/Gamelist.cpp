@@ -136,6 +136,14 @@ void parseGamelist(SystemData* system)
 				file->metadata.set("name", defaultName);
 
 			file->metadata.resetChangedFlag();
+
+			// index if it's a game!
+			if(type == GAME)
+			{
+				FileFilterIndex* index = system->getIndex();
+				index->addToIndex(file);
+			}
+
 		}
 	}
 }

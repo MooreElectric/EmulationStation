@@ -13,7 +13,7 @@
 #include "stdlib.h"
 #include <vector>
 
-#include "pugixml/pugixml.hpp"
+#include "pugixml/src/pugixml.hpp"
 #include "platform.h"
 #include <boost/filesystem.hpp>
 #include <boost/assign.hpp>
