@@ -89,9 +89,12 @@ void thegamesdb_generate_scraper_requests(const ScraperSearchParams& params, std
 			std::string gameID = cleanName.substr(3,-1);
 			path += "id=" + HttpReq::urlEncode(gameID);
 			usingGameID = true;
+		} else if (cleanName.substr(0,6) == "exact:") {
+			std::string exactQuery = cleanName.substr(6,-1);
+			path += "exactname=" + HttpReq::urlEncode(exactQuery);
 		}
 		else {
-			path += "exactname=" + HttpReq::urlEncode(cleanName);
+			path += "name=" + HttpReq::urlEncode(cleanName);
 		}
 	}
 
